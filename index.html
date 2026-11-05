@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>A Revolta dos Carecas Contra os Cabeludos</title>
+        
+        <style>
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #0b0b0b;
+                color: #ffffff;
+                padding: 25px 20px;
+                gap: 15px;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #333333;
+                background-color: #f4f6f9;
+                line-height: 1.6;
+            }
+
+            header {
+                background-color: #141414;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h4 {
+                display: block;
+                color: #e50914;
+                margin-bottom: 5px;
+            }
+
+            nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: #1f1f1f;
+                padding: 12px;
+                border-radius: 8px;
+            }
+
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 6px;
+                margin-bottom: 10px;
+            }
+
+             h3 {font-size: 1.1rem;
+            margin-bottom: 8px;
+            }
+
+            th,td {
+                border: 1px solid #dddddd;
+                padding: 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #141414;
+                color: #ffffff;
+            }
+
+            tr{
+                background-color: #f9f9f9;
+            }
+
+            .tudo {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .botao {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #e50914;
+                color: #ffffff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            .botao:hover {
+                background-color: #b20710;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+                color: #e50914;
+            }
+
+            .link {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
+
+            .link:hover {
+                background-color: #e50914;
+            }
+
+            .apresentacao {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin: 30px 20px;
+                padding: 25px;
+                background-color: #ffffff;
+                border-radius: 8px;
+            }
+
+            .apresentacaoTexto {
+                margin-bottom: 15px;
+                color: #141414;
+            }
+
+            .secaoCards {
+                margin: 40px 20px;
+                text-align: center;
+            }
+
+            .secao{
+                margin-bottom: 20px;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .card {
+                width: 250px;
+                padding: 15px;
+                border: 2px solid #dddddd;
+                border-radius: 10px;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+
+            .cardBotao {
+                display: inline-block;
+                padding: 6px 12px;
+                background-color: #141414;
+                color: #ffffff;
+                border-radius: 4px;
+                font-size: 0.85rem;
+            }
+
+            .cardBotao:hover {
+                background-color: #e50914;
+            }
+
+            .cardDestaque{
+                position: relative;
+                border-color: #e50914;
+            }
+
+            .destaque {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #e50914;
+                color: #ffffff;
+                padding: 4px 8px;
+                font-size: 0.75rem;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+
+            .secaoProg {
+                margin: 40px 20px;
+                padding: 25px;
+                background-color: #ffffff;
+                border-radius: 8px;
+            }
+
+            .secaoTitulo {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .faixa {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                gap: 10px;
+            }
+
+            .bloco {
+                background-color: #f8f9fa;
+                border: 1px solid #cccccc;
+                padding: 15px;
+                border-radius: 6px;
+                text-align: center;
+                flex: 1;
+            }
+
+            .tabela {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .infoContato {
+                color: #e50914;
+                margin-bottom: 5px;
+            }
+
+            .creditos {
+                font-size: 0.85rem;
+                color: #888888;
+                border-top: 1px solid #333333;
+                padding-top: 10px;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body  class = "tudo">
+        <a href = "#inicio" class = "botao">Voltar ao topo</a>
+
+        <header id = "inicio" class = "header">
+            <h1 class = "logo">MC Careca X Malévola</h1>
+            <nav>
+                <a href = "#inicio" class = "link">Início</a>
+                <a href = "#destaques" class = "link">Destaques</a>
+                <a href = "#programacao" class = "link">Programação</a>
+                <a href = "#contato" class = "link">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="apresentacao">
+                <div>
+                    <h2 class = "apresentacaoTexto" >Mostra Tópicos MAIS Importante da Briga de Paiva e Malévola</h2>
+                    <p>
+                        MC Paiva e Soso Carteca brigaram com a influenciadora Malévola na web após trocarem acusações de exposição pessoal e provocações, movimentando os fãs.
+                    </p>
+                </div>
+            </section>
+
+            <section id="destaques" class="secaoCards">
+                <h2 class = "secao">Principais Acontecimentos</h2>
+                
+                <div class="cards">
+            
+                    <article class="card cardDestaque">
+                        <span class="destaque">DESTAQUE</span>
+                        <img src=https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/10/soso-careca-mc-paiva-e1793114014867.jpg?w=1200&h=900&crop=0&quality=90" alt="Acontecimento 1">
+                        <h3>Soso Careca está Grávida</h3>
+                        <p>Em outubro, Soso e Paiva anunciaram que esperam o primeiro filho e ela deixou a faculdade.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+
+                    
+                    <article class="card">
+                        <img src=https://otempo.scene7.com/is/image/sempreeditora/entretenimento-cobranca_indevida-salao_de_beleza-direitos_do_consumidor-1777487866?qlt=90&wid=1200&ts=1777487956428&dpr=off alt="Acontecimento 2">
+                        <h3>Salão de beleza</h3>
+                        <p>A treta começou após Malévola acusar um cabeleireiro de golpe. Soso o defendeu e a atacou.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+
+                    -
+                    <article class="card">
+                        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-wJuiYBb915mDYYOXX_K787UwQlcpaLj1gF_gkV30AWWEezLG7zRLVICt&s=10alt="Acontecimento 3">
+                        <h3>Briga no Shopping</h3>
+                        <p>MC Paiva fez ofensas transfóbicas a Malévola. Eles se encontraram e saíram no soco no shopping.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+
+                
+                    <article class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBi2aBtBo2i8z7ReVvfOaHE5XpOfBwQuPNzejR9q4eA&s=10" alt="Acontecimento 4">
+                        <h3>Paz e Guerra</h3>
+                        <p>Soso fez pazes com Malévola nos EUA, irritando Paiva, que terminou com ela, mas reataram logo.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+
+                
+                    <article class="card">
+                        <img src="https://diariodamidia.com.br/uploads/artigos/soso-careca-admite-incomodo-apos-repercussao-sobre-clts-4x3.webp" alt="Acontecimento 5">
+                        <h3>Os CLT</h3>
+                        <p>A briga voltou após Soso debochar do trabalho CLT e Malévola resgatar um vídeo da rival.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+
+                
+                    <article class="card">
+                        <img src="https://f.i.uol.com.br/fotografia/2026/10/27/17931330966ae10a28c088c_1793133096_3x2_xl.jpg" alt="Acontecimento 6">
+                        <h3>Pronuciamento da Malévola</h3>
+                        <p>Malévola ironizou a gravidez de Soso e Paiva, acusando o funkeiro de pai ausente e a jovem de imatura.</p>
+                        <a href="#programacao" class="cardBotao">Saiba mais</a>
+                    </article>
+                </div>
+            </section>
+        
+            <section id="programacao" class="secaoProg">
+                <h2 class = "secaoTitulo">Programação Oficial</h2>
+
+                <div class="faixa">
+                    <div class="bloco">
+                        <h4>Total de Exibições:</h4>
+                        <p>4 Episódios & 2 Fases Principais</p>
+                    </div>
+                    <div class="bloco">
+                        <h4>Período dos Acontecimentos:</h4>
+                        <p>Abril a Outubro de 2026</p>
+                    </div>
+                    <div class="bloco">
+                        <h4>Local de Exibição:</h4>
+                        <p>Redes Sociais (TikTok, Instagram e X)</p>
+                    </div>
+                </div>
+
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Atividade</th>
+                            <th>Data / Horário</th>
+                            <th>Local / Responsável</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Exposição sobre o procedimento capilar</td>
+                            <td>23/04 - 18:00</td>
+                            <td>Instagram e TikTok / Malévola Alves</td>
+                        </tr>
+                        <tr>
+                            <td>Confronto e discussão presencial</td>
+                            <td>29/04 - 21:30</td>
+                            <td>Shopping na ZL de SP / MC Paiva</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento de música e debate CLT</td>
+                            <td>15/09 - 19:00</td>
+                            <td>Redes Sociais / Soso Careca</td>
+                        </tr>
+                        <tr>
+                            <td>Anúncio da gestação e vídeos de réplica</td>
+                            <td>27/10 - 15:00</td>
+                            <td>Instagram e TikTok / Malévola Alves</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+        <footer>
+            <div>
+                <h3 class="infoContato" >Organização Vamo Batalha</h3>
+                <p>Instituto Federal do Ceará - Campus Maranguape</p>
+                <p>Contato: vamobatalha@gmail.com</p>
+            </div>
+            <div class="creditos">
+                <p>Desenvolvido por: Bruna Witney e Yasmim Domingos</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
